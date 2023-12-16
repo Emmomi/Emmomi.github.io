@@ -51,7 +51,7 @@ export const Media:FC = () => {
                 link='http://emmomi.booth.pm/'
                 src='/icons/booth.svg'
                 title='Booth'
-                text='3Dのオブジェクトを販売してます'
+                text='3Dのオブジェクトを販売してます 買ってね'
             />
             <MediaLink
                 link='https://twitter.com/Emmomi1'
