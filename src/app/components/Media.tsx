@@ -1,4 +1,6 @@
+'use client'
 import { HStack, VStack, Text, Card, CardHeader, CardBody, CardFooter, Link, Image } from '@chakra-ui/react'
+import { motion } from 'framer-motion';
 import { FC } from 'react';
 
 interface Prop{
@@ -15,7 +17,7 @@ const MediaLink:FC<Prop> = (Prop) => {
                 <CardBody>
                     <HStack>
                         <Image src={Prop.src} boxSize='70px'/>
-                        <VStack align='stretch'>
+                        <VStack align='stretch' as={motion.div} whileHover={{ scale: 1.1 }}>
                             <Text as='b' color='#00a3af'>{Prop.title}</Text>
                             <Text>{Prop.text}</Text>
                         </VStack>
