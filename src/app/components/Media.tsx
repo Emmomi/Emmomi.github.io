@@ -1,5 +1,7 @@
+'use client'
 import { HStack, VStack, Text, Card, CardHeader, CardBody, CardFooter, Link, Image } from '@chakra-ui/react'
-import { FC } from 'react';
+import { motion } from 'framer-motion';
+import { FC, useState } from 'react';
 
 interface Prop{
     link:string
@@ -9,13 +11,15 @@ interface Prop{
 }
 
 const MediaLink:FC<Prop> = (Prop) => {
+    const [isHovered, setHovered] = useState(true)
+
     return (
         <Link href={Prop.link}>
-            <Card>
+            <Card as={motion.div}  onHoverStart={()=>{setHovered(false)}} onHoverEnd={()=>{setHovered(true)}}>
                 <CardBody>
                     <HStack>
                         <Image src={Prop.src} boxSize='70px'/>
-                        <VStack align='stretch'>
+                        <VStack align='stretch' as={motion.div} animate={{ display: isHovered ? "none":"flex" }}>
                             <Text as='b' color='#00a3af'>{Prop.title}</Text>
                             <Text>{Prop.text}</Text>
                         </VStack>
