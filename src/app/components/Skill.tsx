@@ -41,6 +41,7 @@ export const Skill:FC = () => {
                         <Image src='/icons/git-original.svg' boxSize='70px' />
                         <Image src='/icons/github-original.svg' boxSize='70px' />
                         <Image src='/icons/vscode-original.svg' boxSize='70px' />
+                        <Image src='/icons/docker-plain-wordmark.svg' boxSize='70px' />
                         <Image src='/icons/inkscape-original.svg' boxSize='70px' />
                     </HStack>
                 </CardBody>

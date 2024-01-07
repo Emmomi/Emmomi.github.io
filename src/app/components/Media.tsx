@@ -15,7 +15,15 @@ const MediaLink:FC<Prop> = (Prop) => {
 
     return (
         <Link href={Prop.link}>
-            <Card as={motion.div}  onHoverStart={()=>{setHovered(false)}} onHoverEnd={()=>{setHovered(true)}}>
+            <Card
+                as={motion.div}
+                whileHover={{
+                    scale:1.2,
+                    y:-20,
+                }}
+                onHoverStart={()=>{setHovered(false)}}
+                onHoverEnd={()=>{setHovered(true)}}
+            >
                 <CardBody>
                     <HStack>
                         <Image src={Prop.src} boxSize='70px'/>
@@ -68,6 +76,12 @@ export const Media:FC = () => {
                 src='/icons/misskey.jpg'
                 title='Misskey'
                 text='CG上げてます'
+            />
+            <MediaLink
+                link='https://unityroom.com/users/3d1u0tqvjme725plgno8'
+                src='/icons/unityroom.png'
+                title='Unityroom'
+                text='ゲームがあります'
             />
         </HStack>
     )
