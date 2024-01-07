@@ -28,6 +28,7 @@ export const About: FC = () => {
                         <VStack align='stretch'>
                             <Info title='Name' text='近藤 克'></Info>
                             <Info title='趣味' text='ゲーム Blender おでかけ'></Info>
+                            <Info title='Mail' text='kgrowth12@gmail.com' />
                         </VStack>
                     </HStack>
                 </CardBody>
