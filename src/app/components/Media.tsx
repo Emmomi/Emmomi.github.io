@@ -125,7 +125,7 @@ export const Media:FC = () => {
                 link='https://unityroom.com/users/3d1u0tqvjme725plgno8'
                 src='/icons/unityroom.png'
                 title='Unityroom'
-                text='ゲームがあります'
+                description={<Text>ゲームがあります</Text>}
             />
         </HStack>
     )
