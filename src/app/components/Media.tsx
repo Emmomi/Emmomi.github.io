@@ -121,12 +121,6 @@ export const Media:FC = () => {
                 title='GitHub'
                 description={<Text>ソースコードがいろいろ</Text>}
             />
-            <MediaLink
-                link='https://unityroom.com/users/3d1u0tqvjme725plgno8'
-                src='/icons/unityroom.png'
-                title='Unityroom'
-                description={<Text>ゲームがあります</Text>}
-            />
         </HStack>
     )
 }
