@@ -26,7 +26,7 @@ export const About: FC = () => {
                     <HStack>
                         <Image boxSize='150px' borderRadius='full' src='/Emmomi.jpg' alt='My Icon'></Image>
                         <VStack align='stretch'>
-                            <Info title='Name' text='近藤 克'></Info>
+                            <Info title='Name' text='えもみ / Emmomi'></Info>
                             <Info title='趣味' text='ゲーム Blender おでかけ'></Info>
                             <Info title='Mail' text='kgrowth12@gmail.com' />
                         </VStack>
